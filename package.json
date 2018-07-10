@@ -1,5 +1,6 @@
 {
   "name": "app-store",
+  "homepage": "https://chauchakching.github.io/App-store",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
