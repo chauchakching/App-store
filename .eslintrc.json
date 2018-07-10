@@ -1,0 +1,25 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "standard",
+    "promise",
+    "react"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "space-before-function-paren": ["error", {
+      "anonymous": "ignore",
+      "named": "ignore",
+      "asyncArrow": "ignore"
+    }],
+    "react/jsx-uses-vars": 1
+  },
+  "env": {
+    "jest": true
+  }
+}
