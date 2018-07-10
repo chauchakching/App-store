@@ -74,9 +74,9 @@ module.exports = {
         .replace(/\\/g, '/')
   },
   externals: {
-    appConfig: {
+    appConfig: JSON.stringify({
       env: process.env.NODE_ENV || 'development'
-    }
+    })
   },
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
