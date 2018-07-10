@@ -2,6 +2,7 @@ import React from 'react'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {Input} from 'antd'
+import css from 'styles/variables'
 
 import {search} from 'redux/data/search/actions'
 
@@ -14,7 +15,8 @@ class SearchBar extends React.Component {
         placeholder='搜尋'
         style={{
           width: '100%',
-          maxWidth: '500px'
+          maxWidth: '500px',
+          fontSize: css.sizeNormal
         }}
         onChange={this.onChange}
       />
