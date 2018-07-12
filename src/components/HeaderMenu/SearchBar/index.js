@@ -15,8 +15,7 @@ class SearchBar extends React.Component {
         placeholder='搜尋'
         style={{
           width: '100%',
-          maxWidth: '500px',
-          fontSize: css.sizeNormal
+          maxWidth: '500px'
         }}
         onChange={this.onChange}
       />
