@@ -20,6 +20,7 @@ class HorizontalAppList extends React.Component {
           marginBottom: css.space1x
         }}
         minScrollSize={40}
+        smoothScrolling
       >
         {this.props.items.length > 0
           ? (
