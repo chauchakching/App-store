@@ -11,7 +11,9 @@ const Rating = ({averageUserRating, userRatingCount}) => (
       style={{
         fontSize: css.space1x
       }}
-    /> <RatingCount>({userRatingCount})</RatingCount>
+    /> {userRatingCount && (
+      <RatingCount>({userRatingCount})</RatingCount>
+    )}
   </div>
 )
 

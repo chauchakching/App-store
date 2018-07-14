@@ -51,10 +51,12 @@ class AppListItem extends React.Component {
               {this.props.genres.join(', ')}
             </ItemOverviewSubtitle>
 
-            <Rating
-              averageUserRating={this.props.averageUserRating}
-              userRatingCount={this.props.userRatingCount}
-            />
+            {(this.props.averageUserRating || this.props.userRatingCount) && (
+              <Rating
+                averageUserRating={this.props.averageUserRating}
+                userRatingCount={this.props.userRatingCount}
+              />
+            )}
 
           </ItemOverviewWrapper>
         </ItemBox>
